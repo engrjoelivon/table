@@ -19,7 +19,7 @@ public TableModel()
 
 
 @Override
-public String getColumnName(int column) /*Overides this method to pass in the column names*/
+public String getColumnName(int column) /*Overrides this method to pass in the names of every column,from the columnNames array*/
 {
 	
 	return columnNames[column];
@@ -34,7 +34,7 @@ public String getColumnName(int column) /*Overides this method to pass in the co
 	}
 
 	@Override
-	public int getColumnCount()/*This is manually defined based on the number of fileds contains in every object or number of informations intended to be displayed*/ {
+	public int getColumnCount()/*This is manually defined based on the number of fields contained in every object or number of informations intended to be displayed*/ {
 		
 		return 6;
 	}
@@ -66,7 +66,7 @@ public String getColumnName(int column) /*Overides this method to pass in the co
 		return person.getOccupation();}
 		case 5:{
 			size++;
-		return person.getId();}
+		return person.getId();}   //the number of cases must be equal to the number of columns,which is 6 from the example.
 		
 		
 		
